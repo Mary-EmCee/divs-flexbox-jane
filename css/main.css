@@ -99,29 +99,67 @@ textarea {
 html {
   background-color: #fae1f4;
   height: 100%;
+  width: 100%;
 }
 
 body {
+   background-color: #fae1f4;
   font-family: 'Source Sans Pro', sans-serif;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  display: flex;
-  font-weight: 700;
-  justify-content: space-around;
+header,
+footer {
+ 
+  height: 80px;
+  width: 100%;
+
 }
 
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+main {
+  background-color: #fae1f4;
+  height: 250px;
+  width: 100%;
+}
+
+header, footer, main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header {
+    color:#374048;
+    font-family: 'Sacramento', cursive;
+    font-size: 4em;
+    font-weight: 700;
+    height: auto;
+}
+
+main {
+    color: #374048;
+    font-size: 2em;
+    padding: 1em;
+}
+
+.wrapper {
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div-items {
+ 
   align-items: center;
   border: ivory 8px solid;
   border-radius: 5px;
-  color: #746f6f;
+  color: #374048;
   display: flex;
+  font-weight: 700;
   justify-content: center;
   line-height: 1.5em;
   padding: 1%;
@@ -129,6 +167,14 @@ body {
   background-color: #fcb9ec;
   height: 300px;
   width: 30%;
+}
+footer{
+    color:#374048;
+    font-family: 'Sacramento', cursive;
+    font-size: 2em;
+    font-weight: 700;
+    height: auto;
+    padding-top: 2em;
 }
 
 
